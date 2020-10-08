@@ -1,3 +1,4 @@
+const PORT = process.env.PORT;
 const express = require('express');
 const cors = require('cors');
 const bodyParser = require('body-parser');
@@ -90,4 +91,4 @@ app.get('/', (req, res)=>{
     res.send("Hello World");
 })
 
-app.listen(4000, ()=>console.log("Port is Listening 4000"));
+app.listen(PORT, ()=>console.log("Port is Listening 4000"));
